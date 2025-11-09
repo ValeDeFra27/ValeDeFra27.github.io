@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Impara gli Incantesimi</title>
+    <style>
+        /* Imposta il colore iniziale della parola "Lumos:" su bianco */
+        #lumos-trigger { color: white; }
+        /* Nasconde l'immagine inizialmente */
+        #hidden-image { display: none; }
+    </style>
+</head>
+<body bgcolor="black" text="black">
+    <center>
+        <IMG SRC="img\Incantesimo.png" width="750"></IMG>
+        <h1 align="center">Benvenuto nel magico mondo di Harry Potter</h1>
+        <table border="0" cellspacing="50">
+            <tr>
+                <td><a href="index.html"><h2>Home</h2></a></td>
+                <td><a href="La Storia di Hogwarts.html"><h2>Scopri la storia di Hogwarts</h2></a></td>
+                <td><a href="Le Case.html"><h2>Esplora le Case</h2></a></td>
+                <td><a href="Gli Incantesimi.html"><h2>Impara gli incantesimi</h2></a></td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <h2>Incantesimi più Importanti</h2>
+    <ul>
+        <li><b>Expelliarmus:</b> L’incantesimo di disarmo, usato per far volare via la bacchetta dell’avversario.</li>
+        <li><b><span id="lumos-trigger" onclick="illuminatePage()">Lumos</span>:</b> Crea una luce sulla punta della bacchetta, come una torcia.</li>
+        <li><b>Bombarda:</b> Provoca un’esplosione controllata, utile per rompere muri o ostacoli.</li>
+        <li><b>Alohomora:</b> Apre porte e serrature chiuse magicamente.</li>
+        <li><b>Wingardium Leviosa:</b> Fa levitare oggetti e permette di muoverli a distanza.</li>
+        <li><b>Accio:</b> Attira a sé un oggetto distante.</li>
+        <li><b>Expecto Patronum:</b> Evoca un Patronus per difendersi dai Dissennatori.</li>
+        <li><b>Stupefy:</b> Stordisce temporaneamente l’avversario.</li>
+        <li><b>Protego:</b> Crea uno scudo magico che blocca incantesimi e maledizioni.</li>
+        <li><b>Petrificus Totalus:</b> Paralizza completamente il corpo della vittima.</li>
+        <li><b>Obliviate:</b> Cancella o modifica i ricordi di una persona.</li>
+        <li><b>Riddikulus:</b> Trasforma un Molliccio in qualcosa di comico per sconfiggerlo.</li>
+        <li><b>Reparo:</b> Ripara oggetti rotti o danneggiati.</li>
+        <li><b>Incendio:</b> Evoca fiamme e viene usato per accendere fuochi.</li>
+        <li><b>Imperio:</b> Controlla completamente la volontà di un’altra persona.</li>
+        <li><b>Crucio:</b> Causa dolore insopportabile alla vittima.</li>
+        <li><b>Avada Kedavra:</b> Uccide istantaneamente la vittima.</li>
+        <li><b>Sectumsempra:</b> Provoca profonde ferite taglienti.</li>
+        <li><b>Finite Incantatem:</b> Annulla gli effetti di altri incantesimi.</li>
+        <li><b>Confundo:</b> Causa confusione e disorientamento nella mente della vittima.</li>
+    </ul>
+    <br>
+    <IMG id="hidden-image" SRC="https://preview.redd.it/mflt1px10sz01.jpg?width=1080&crop=smart&auto=webp&s=5ca1e1cddb648ece8e4e67379370d546000c7e9c"></IMG>
+
+    <script>
+        function illuminatePage() {
+            // Cambia lo sfondo della pagina in bianco
+            document.body.bgColor = 'white';
+
+            // Cambia il colore di "Lumos" in nero
+            var lumosWord = document.getElementById('lumos-trigger');
+            lumosWord.style.color = 'black';
+
+            // Mostra l'immagine
+            var hiddenImage = document.getElementById('hidden-image');
+            hiddenImage.style.display = 'block';
+        }
+    </script>
+   
+</body>
+</html>
